@@ -61,4 +61,5 @@ iOSInjectionProject/
 
 #Private Plist Files
 #Ignoring files where credentials would be stored.
-Private.plist
+
+Caliber-Toolkit/Private.plist
