@@ -5,4 +5,6 @@
 
 target 'Caliber-Toolkit' do
     pod 'ObjectiveSugar'
+    pod 'OctoKit'
+    pod 'IQKeyboardManager'
 end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "OctoKit.h"
+#import "PlistManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NSString *clientID = [PlistManager returnValueForKey:@"client_id" fromFile:@"Private"];
+    NSString *clientSecret = [PlistManager returnValueForKey:@"client_secret" fromFile:@"Private"];;
+    
+    [OCTClient setClientID:clientID clientSecret:clientSecret];
+    
     return YES;
 }
 
